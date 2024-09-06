@@ -1,0 +1,4 @@
+Placeholder text is commonly used in graphic design, publishing, and web development to show the visual form of a document or layout without using actual content.
+The most well-known placeholder text is "Lorem ipsum", which has been used since the 1500s as a dummy text.
+Placeholder text should have sufficient contrast to be accessible, according to WCAG guidelines.
+Placeholder text can be added and edited in various software and platforms, such as Qualtrics, Confluence, and Dropbox. The process may vary depending on the specific tool.
