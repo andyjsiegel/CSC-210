@@ -1,4 +1,10 @@
-// package com.gradescope.anagrams;
+package com.gradescope.anagrams;
+/* 
+This Java program takes in command line arguments to determine anagrams from a word.
+The first argument is the words list (txt) that determines the valid words.
+The second argument is the word to find anagrams from
+The third argument is the max number of anagrams.
+*/
 import java.io.FileNotFoundException;
 import java.io.File;
 import java.util.Scanner;
@@ -55,7 +61,9 @@ public class Anagrams {
             Arrays.sort(array2);
             boolean arraysAreEqual = Arrays.equals(array1, array2);
             if(arraysAreEqual) {
-                allResults.add(new ArrayList<>(result)); // Add a copy of the result
+                if(maxAnagrams == -1 || result.size() == maxAnagrams) {
+                    allResults.add(new ArrayList<>(result)); // Add a copy of the result
+                }
             }
             
             return;
@@ -87,12 +95,12 @@ public class Anagrams {
     
     public static void main(String[] args) throws FileNotFoundException {
             
-            // String wordList = args[0];
-            // String word = args[1];
-            // int maxAnas = Integer.valueOf(args[2]);
-            String wordList = "2024_09_18_Recursion/words1.txt";
-            String word = "barbarabush";
-            int maxAnas = 0;
+            String wordList = args[0];
+            String word = args[1];
+            int maxAnas = Integer.valueOf(args[2]);
+            // String wordList = "2024_09_18_Recursion/words1.txt";
+            // String word = "barbarabush";
+            // int maxAnas = 0;
             if (maxAnas == 0) maxAnas = -1;  // set to -1 for no limit
     
             System.out.println("Phrase to scramble: " + word);
@@ -119,7 +127,6 @@ public class Anagrams {
                     return o1.toString().compareTo(o2.toString());
                 }
             });
-    
             for (int i = 0; i < allResults.size(); i++) System.out.println(allResults.get(i));
     
     
