@@ -1,4 +1,4 @@
-package com.gradescope.anagrams;
+// package com.gradescope.anagrams;
 /* 
 This Java program takes in command line arguments to determine anagrams from a word.
 The first argument is the words list (txt) that determines the valid words.
