@@ -1,4 +1,4 @@
-package com.gradescope.bst;
+// package com.gradescope.bst;
 import java.util.ArrayList;
 
 public class BSTree implements BTNode {
@@ -41,7 +41,7 @@ public class BSTree implements BTNode {
         }
     }
 
-    public boolean search(BTNode node, int value) {
+    public boolean search(int value, BTNode node) {
         // end of tree, base case, value not in BST
         if (node == null) return false; 
         
@@ -49,8 +49,8 @@ public class BSTree implements BTNode {
         if (node.getValue() == value) return true;
         
         // keep looking
-        if (value < node.getValue()) return search(node.getLeft(), value);
-        else return search(node.getRight(), value);
+        if (value < node.getValue()) return search(value, node.getLeft());
+        else return search(value, node.getRight());
         
     }
     
