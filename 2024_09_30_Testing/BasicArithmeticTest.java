@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import static org.junit.Assert.assertEquals;
+=======
+import static org.junit.jupiter.api.Assertions.assertEquals;
+>>>>>>> refs/remotes/origin/main
 import org.junit.jupiter.api.Test;
 
 public class BasicArithmeticTest {
