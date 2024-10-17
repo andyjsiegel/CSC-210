@@ -1,0 +1,13 @@
+rows: 5
+cols: 1
+
+PLANT (4,0) apple
+grow 1
+PLANT (3,0) apple
+grow 1
+PLANT (2,0) apple
+grow 1
+PLANT (1,0) apple
+grow 1
+PLANT (0,0) apple
+print
