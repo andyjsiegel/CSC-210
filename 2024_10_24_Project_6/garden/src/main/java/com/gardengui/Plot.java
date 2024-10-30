@@ -1,5 +1,5 @@
+package com.gardengui;
 // package com.gradescope.garden;
-
 public class Plot {
     private char[][] asciiRepresentation = {
         {'.', '.', '.', '.', '.'},
