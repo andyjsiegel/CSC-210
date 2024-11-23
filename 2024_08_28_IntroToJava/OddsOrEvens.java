@@ -1,4 +1,4 @@
-package com.gradescope.oddeven;
+// package com.gradescope.oddeven;
 
 public class OddsOrEvens {
     public static boolean isEven(int number) { 

@@ -1,0 +1,3 @@
+triangle,side:4,100,150,BLUE
+square,side:4,20,15,YELLOW
+circle,radius:4,50,60,GREEN
