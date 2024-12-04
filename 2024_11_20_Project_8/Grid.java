@@ -35,9 +35,6 @@ public class Grid {
 
     private void placeWord(String word) {
         boolean placed = false;
-        boolean placedDiagonally = false;
-        boolean placedVertically = false;
-        boolean placedHorizontally = false;
         int attempts = 0;
         while (!placed && attempts < 100) { // Limit attempts to avoid infinite loop
             int direction = random.nextInt(3); // 0: horizontal, 1: vertical, 2: diagonal

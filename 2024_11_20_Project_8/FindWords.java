@@ -4,6 +4,7 @@ import java.util.ArrayList;
 public class FindWords {
 	
 	public static ArrayList<String> readFile(Scanner reader) {
+		// this method reads the file and returns an ArrayList of Strings where each String is a line in the file
 		ArrayList<String> result = new ArrayList<String>();
 		
 		while (reader.hasNext()) {
